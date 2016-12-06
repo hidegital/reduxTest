@@ -24,6 +24,7 @@
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
     "image-webpack-loader": "^2.0.0",
+    "immutable": "^3.8.1",
     "oui-dom-events": "^0.2.1",
     "postcss-loader": "^0.13.0",
     "precss": "^1.4.0",

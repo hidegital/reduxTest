@@ -14,3 +14,46 @@ ReactDOM.render(
 	rootEl
 );
 
+
+//下記immutableテスト
+import {List,Map} from 'immutable';
+
+var a = [
+	"Hydrogen",
+	"Helium",
+	"Lithium",
+	"Beryl­lium"
+];
+
+var b = List(a);
+//object
+
+var c = b.toArray();
+
+b.push('fugafuga') ;
+
+// console.log(typeof b);
+// object
+
+// console.log(c);
+// console.log(d.toArray());
+
+
+var a2 = a.map(function(s){ return s.length });
+var a3 = a.map( s => s.length );
+
+// console.log(a2);
+// console.log(a3);
+
+
+var aa = [1,2,3];
+var bb = aa.push(4);
+
+console.log(aa);
+console.log(bb);
+
+//.toJSで通常のオブジェクトとしてコンソールで確認できる
+
+const todo = Map({ id: 0, text: 'foo', isDone: false });
+todo.update('isDone', isDone => !isDone);
+console.log(todo.toJS());
